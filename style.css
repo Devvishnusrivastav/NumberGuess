@@ -1,0 +1,121 @@
+
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #1e3c72, #2a5298);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: #ffcc00;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    p {
+        font-size: 1.2rem;
+        margin: 10px 0;
+    }
+
+    button {
+        background-color: #ff6f61;
+        color: #fff;
+        font-size: 1rem;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-top: 10px;
+    }
+
+    button:hover {
+        background-color: #ff8a75;
+    }
+
+    #connectWallet {
+        background-color: #4caf50;
+    }
+
+    #connectWallet:hover {
+        background-color: #66bb6a;
+    }
+
+    #walletAddress {
+        font-size: 1rem;
+        margin-top: 10px;
+        word-break: break-word;
+        background-color: rgba(255, 255, 255, 0.2);
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    #gameInfo {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    #guessSection {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    input[type="number"] {
+        padding: 10px;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+        margin: 10px 0;
+        width: 60%;
+        max-width: 300px;
+        text-align: center;
+    }
+
+    input[type="number"]:focus {
+        border-color: #ffcc00;
+        box-shadow: 0 0 5px rgba(255, 204, 0, 0.8);
+    }
+
+    #feedback {
+        margin-top: 20px;
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: #ffcc00;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    }
+
+    /* Card-like container for sections */
+    #wallet-section, #gameInfo, #guessSection {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 20px;
+        border-radius: 10px;
+        width: 90%;
+        max-width: 500px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        margin-bottom: 15px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 600px) {
+        h1 {
+            font-size: 2rem;
+        }
+
+        button {
+            font-size: 0.9rem;
+            padding: 8px 15px;
+        }
+
+        input[type="number"] {
+            width: 80%;
+        }
+    }
